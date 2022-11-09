@@ -7,5 +7,6 @@ type HelloResponse = {
 
 // /api/helloで呼ばれたときのAPIの挙動を実装する
 export default (req: NextApiRequest, res: NextApiResponse<HelloResponse>) => {
+  //ステータス200で{"name" : "John Done"}を返す
   res.status(200).json({ name: 'John Doe' })
 }
